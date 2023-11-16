@@ -1,178 +1,102 @@
-/* --------FONTS-------- */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
-/* --------FIM FONTS-------- */
-
-@media screen and (min-width: 768px){
-    .conteiner{
-        width: 60%;
-        transition: 0.6s;
-    }
-}
-
-@media screen and (max-width: 1100px){
-    .conteiner{
-        width: 90%;
-        transition: 0.6s;
-    }
-
-    .submit button{
-        width: 100%;
-        transition: 0.3s;
-    }
-} 
-
-@media screen and (max-height: 650px){
-    .conteiner{
-        height: 90%;
-    }
-
-    form{
-        height: 70%;
-    }
-
-    .conteiner h1{
-        margin: 15px 0px 25px;
-    }
-}
-
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Bebas Neue', sans-serif;
+:root{
+    --preto: #000000;
+    --roxoClaro:#9d4edd;
+    --roxo:#420079;
+    --branco:#ffffff;
 }
 
 #pagina{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(90deg, #3c096c 5%, #00000f 70%); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--preto);
 }
 
-/* --------MAIN-------- */
+header{
+    background-color: var(--preto);
+    justify-content: space-between!important;
+}
+
+header a{
+    color: var(--branco)!important;
+}
+
+header #MR{
+    margin-right: 30px !important;
+}
 
 main{
-    width: 60%;
-    height: 700px;
-    background-color: aliceblue;
-    box-shadow: 0px 0px 25px #9d4edd; 
     display: flex;
-    overflow: hidden;
-    background-color: #06010e00; 
+    justify-content: center;
+    flex-direction: column ;
 }
 
-.banner , .formulario{
-    width: 50%;
-    height: 100%;
-}
-
-.banner{
-    background-image: url(../images/blue-purple-dark-pink-cube-digital-art-4k-abstract.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.efeito{
-    width: 100%;
-    height: 100%;
-    background-color: #00000f7e;  
-}
-
-.formulario{
+#banner{
+    background-image: url(../images/Frame1.png);
+    height: 500px !important;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+#efeito{
     width: 50%;
-}
-
-form{
-    width: 95%;
-}
-
-h1,h2,h3,h4,h5,h6,label{
-    color: #9d4edd;
-    /* filter: brightness(2.5);  */
-}
-
-h1{
-    margin: 30px 0px 40px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    text-align: center;
     gap: 10px;
-    font-size: 16px;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-label{
-    margin: 0px 17px;
-}
-
-input{
-    width: 90%;
-    color: white;
+.buton{
+    width: 90px;
     height: 30px;
-    border-radius: 3px;
-    padding: 5px;
-    transition: 1s;
-    margin: 0 auto;
+    background-color: var(--roxoClaro);
     border: none;
-    background-color: #6868684b;
-    filter: brightness(2);
+    color: var(--branco);
 }
 
-button{
-    width: 80%;
-    height: 40px;
-    border-radius: 8px;
-    margin: 0px auto;
-    border: none;
-    background-color: #420079;
-    color: white;
+#logo{
+    font-weight: 700;
+    text-shadow: 0px 0px 30px #9d46e4;
+    filter: brightness(3);
+    margin-left: 30px !important;
 }
 
-button:hover{
-    width: 85%;
-    height: 45px;
-    cursor: pointer;
-    box-shadow: 0px 0px 15px #b27ddd;
+@media screen and (max-width: 1100px){
+    #banner{
+        background-image: url(../images/frame2.png);
+        transition: 0.6s;
+    }
 }
 
-.submit{
+@media screen and (max-width: 800px){
+    #banner{
+        background-image: url(../images/Frame3.png);
+        transition: 0.6s;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #banner{
+        background-image: url(../images/frame4.png);
+        transition: 0.6s;
+        background-repeat: no-repeat;
+    }
+}
+
+#card{
     width: 100%;
-    height: auto;
-    margin: 50px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 70px 0 0 70px;
 }
 
-a{
-    width: 80%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+#cardBody{
+    width: 500px;
+    height: 500px;
+    background-color: var(--roxoClaro);
+    padding: 20px;
 }
 
-
-
-/* --------CSS SIGN IN-------- */
-.formIn input #nome{
-    margin-bottom: 40px;
+#about{
+    
 }
-
-
-.Forgot a{
-    width: 100%;
-    margin: 35px 0px;
-    height: auto;
-    color: white;
-}
-/* --------FIM CSS SIGN IN-------- */
-
-/* --------FIM MAIN-------- */
-
