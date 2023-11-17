@@ -1,3 +1,6 @@
+/* --------FONTS-------- */
+
+/* --------FIM FONTS-------- */
 :root{
     --preto: #000000;
     --roxoClaro:#9d4edd;
@@ -16,10 +19,14 @@ header{
 
 header a{
     color: var(--branco)!important;
+    margin: 0px 20px;    
+
+}
+header #MR{
 }
 
-header #MR{
-    margin-right: 30px !important;
+#menuNav{
+    filter: brightness(10);
 }
 
 main{
@@ -48,55 +55,88 @@ main{
     flex-direction: column;
 }
 
+.buttonS{
+    width: 80px;
+    height: 35px;
+    color: var(--branco);
+    border: none;
+    background-color: var(--roxo);
+    margin: -10px;
+    
+}
+
+hr{
+    width: 1px;
+    height: 45px;
+    margin-top: 0;
+    background-color: var(--branco);
+}
+
 .buton{
-    width: 90px;
-    height: 30px;
+    width: 100px;
+    height: 28px;
     background-color: var(--roxoClaro);
     border: none;
     color: var(--branco);
+    font-weight: 600;
 }
 
 #logo{
     font-weight: 700;
     text-shadow: 0px 0px 30px #9d46e4;
-    filter: brightness(3);
+    filter: brightness(5);
     margin-left: 30px !important;
+    font-size: 25px;
+
 }
 
 @media screen and (max-width: 1100px){
     #banner{
         background-image: url(../images/frame2.png);
-        transition: 0.6s;
+        transition: 0.4s;
     }
 }
 
 @media screen and (max-width: 800px){
     #banner{
         background-image: url(../images/Frame3.png);
-        transition: 0.6s;
+        transition: 0.4s;
     }
 }
 
 @media screen and (max-width: 650px){
     #banner{
         background-image: url(../images/frame4.png);
-        transition: 0.6s;
+        transition: 0.4s;
         background-repeat: no-repeat;
     }
 }
 
 #card{
-    width: 100%;
-    margin: 70px 0 0 70px;
+    padding: 0 70px 0 70px;
+    display: flex;
+    justify-content: center;    
 }
 
 #cardBody{
-    width: 500px;
+    width: 550px;
     height: 500px;
-    background-color: var(--roxoClaro);
-    padding: 20px;
+    color: var(--branco);
 }
 
 #about{
-    
+    width: 80% !important;
+    height: 100%!important;
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    padding: 0 0 0 29px !important;
+}
+
+#bannerA {
+    width: 90%;
+    height: 90%;
+    margin-top: -460px;
+    right:  -480px;
+    position: relative;
 }

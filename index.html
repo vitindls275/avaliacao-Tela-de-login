@@ -14,39 +14,91 @@
             <header class="p-3">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#" id="logo">DELUX</a>
-                    <header>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          
-                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              <a class="nav-link" href="#">Features</a>
-                              <a class="nav-link" href="#">Pricing</a>
-                              <a class="nav-link " id="MR">Disabled</a>
+                        <a class="navbar-brand" href="index.html" id="logo">DELUX</a>
+                        <header>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" Aboutdata-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon" id="menuNav"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sobre nós</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/singIn.html"><button type="button" class="buttonS">Entrar</button></a>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/singUp.html"><button type="button" class="buttonS">cadastrar</button></a>
+                                </li>
+                                </ul>
                             </div>
-                          </div>
-                        </div>
-                    </header>
-                      
-                  </nav>
+                        </header>
+                    </div>
+                  </nav>   
             </header>
             <main>
-                <div id="banner" class="container-fluid m-0 p-0">
-                    <!-- <img src="images/Frame 4.png" alt=""> -->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Frame1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+                            <h1>DELUX</h1>
+                            <h5>Exatamente o que você precisa</h5>
+                            <button type="button" class="buton">Ver Mais</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/banner2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+                            <h1>DELUX</h1>
+                            <h5>Exatamente o que você precisa</h5>
+                            <button type="button" class="buton">Ver Mais</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/banner3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+                            <h1>DELUX</h1>
+                            <h5>Exatamente o que você precisa</h5>
+                            <button type="button" class="buton">Ver Mais</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!-- <div id="banner" class="container-fluid m-0 p-0">
                     <div id="efeito">
                         <h1>DELUX</h1>
                         <h5>Exatamente o que você precisa</h5>
                         <button type="button" class="buton">Ver Mais</button>
                     </div>
-                </div>
-                <div id="card">
-                    <section id="cardBody" class="container p-0 m-0">
-                        <div id="about">
-
-                        </div>
+                </div> -->
+                <div id="card" class="d-flex py-5">
+                    <section id="cardBody" class="container p-0 m-0" style="background-color: var(--roxoClaro);">
+                         <div id="about" class="w-100">
+                             <h4>About</h4>
+                            <p>Since being established in 2000, DELUX has been known for an unparalleled commitment to customer satisfaction. It’s this standard of excellence that has provided the impetus for us to grow into the business we are today. For more information about the products and services we provide, reach out today.</p> 
+                        </div>  
+                        <section id="bannerA"><img src="images/bannerx 1.png" alt=""></section>
                     </section>
                 </div>
             </main>
