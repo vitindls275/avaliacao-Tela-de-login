@@ -125,6 +125,7 @@ hr{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -190,4 +191,12 @@ hr{
 
 span h4{
     text-align: center;
+}
+
+
+@media screen and (min-width: 630px){
+    .templateCard{
+        width: 16rem !important;
+        align-items: center;
+    }
 }
