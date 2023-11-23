@@ -1,0 +1,1 @@
+confirm("Peseja receber notificações de promoçoes no site? ")

@@ -115,6 +115,7 @@ hr{
 }
 
 #bannerA{
+    width: 500px;
     height: 420px;
     box-shadow: 0 0 20px var(--roxoClaro);
     overflow: hidden;
@@ -154,7 +155,11 @@ hr{
         height: 460px;
         box-shadow: 0 0 20px var(--roxoClaro);
         transition: 0.4s;
-       
+    }
+
+    #bannerA img{
+        
+        background-size: cover;
     }
 
     #cardBody{
