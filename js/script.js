@@ -1,1 +1,1 @@
-confirm("Peseja receber notificações de promoçoes no site? ")
+confirm("Deseja receber notificações de promoçoes no site? ")
