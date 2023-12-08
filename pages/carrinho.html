@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../style/index.css">
         <link rel="shortcut icon" href="../assets/images/logoIcon.png" type="image/x-icon">
     </head>
-    <body>
+    <body class="font-family-base"> 
         <div id="pagina">
             <header class="p-3" id="headerleftC">
                 <nav class="navbar navbar-expand-lg p-0">
@@ -64,11 +64,11 @@
                               <div class="d-flex justify-content-between align-items-center mb-4">
                                 <div>
                                   <p class="mb-1">Shopping cart</p>
-                                  <p class="mb-0">You have 4 items in your cart</p>
+                                  <p class="mb-0">Você tem 4 itens no seu carrinho</p>
                                 </div>
                                 <div>
-                                  <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!"
-                                      class="text-body">price <i class="fas fa-angle-down mt-1"></i></a></p>
+                                  <p class="mb-0"><span class="text-muted">Ordenar por:</span> <a href="#!"
+                                      class="text-body">preço <i class="fas fa-angle-down mt-1"></i></a></p>
                                 </div>
                               </div>
               
@@ -182,82 +182,26 @@
               
                             </div>
                             <div class="col-lg-5">
-              
-                              <div class="card bg-primary text-white rounded-3">
-                                <div class="card-body">
-                                  <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <h5 class="mb-0">Card details</h5>
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
-                                      class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
-                                  </div>
-              
-                                  <p class="small mb-2">Card type</p>
-                                  <a href="#!" type="submit" class="text-white"><i
-                                      class="fab fa-cc-mastercard fa-2x me-2"></i></a>
-                                  <a href="#!" type="submit" class="text-white"><i
-                                      class="fab fa-cc-visa fa-2x me-2"></i></a>
-                                  <a href="#!" type="submit" class="text-white"><i
-                                      class="fab fa-cc-amex fa-2x me-2"></i></a>
-                                  <a href="#!" type="submit" class="text-white"><i class="fab fa-cc-paypal fa-2x"></i></a>
-              
-                                  <form class="mt-4">
-                                    <div class="form-outline form-white mb-4">
-                                      <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                                        placeholder="Cardholder's Name" />
-                                      <label class="form-label" for="typeName">Cardholder's Name</label>
-                                    </div>
-              
-                                    <div class="form-outline form-white mb-4">
-                                      <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
-                                        placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
-                                      <label class="form-label" for="typeText">Card Number</label>
-                                    </div>
-              
-                                    <div class="row mb-4">
-                                      <div class="col-md-6">
-                                        <div class="form-outline form-white">
-                                          <input type="text" id="typeExp" class="form-control form-control-lg"
-                                            placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
-                                          <label class="form-label" for="typeExp">Expiration</label>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="form-outline form-white">
-                                          <input type="password" id="typeText" class="form-control form-control-lg"
-                                            placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                                          <label class="form-label" for="typeText">Cvv</label>
-                                        </div>
-                                      </div>
-                                    </div>
-              
-                                  </form>
-              
-                                  <hr class="my-4">
-              
-                                  <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Subtotal</p>
-                                    <p class="mb-2">$4798.00</p>
-                                  </div>
-              
-                                  <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Shipping</p>
-                                    <p class="mb-2">$20.00</p>
-                                  </div>
-              
-                                  <div class="d-flex justify-content-between mb-4">
-                                    <p class="mb-2">Total(Incl. taxes)</p>
-                                    <p class="mb-2">$4818.00</p>
-                                  </div>
-              
-                                  <button type="button" class="btn btn-info btn-block btn-lg">
-                                    <div class="d-flex justify-content-between">
-                                      <span>$4818.00</span>
-                                      <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
-                                    </div>
-                                  </button>
-              
+                              <div id="summary" class="summary h-100">
+                                <div><h5><b>Summary</b></h5></div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col" style="padding-left:0;">ITEMS 3</div>
+                                    <div class="col text-right">&euro; 132.00</div>
                                 </div>
-                              </div>
+                                <form>
+                                    <p>SHIPPING</p>
+                                    <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
+                                    <p>GIVE CODE</p>
+                                    <input id="code" placeholder="Enter your code">
+                                </form>
+                                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                                    <div class="col">TOTAL PRICE</div>
+                                    <div class="col text-right">&euro; 137.00</div>
+                                </div>
+                                <button class="btn">CHECKOUT</button>
+                            </div>
+                              
               
                             </div>
               
@@ -313,10 +257,10 @@
           
                     <div class="col-md-4 col-sm-6 col-xs-12">
                       <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa"><img src="assets/svg/facebook.svg" alt=""></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa"><img src="assets/svg/linkedin.svg" alt=""></i></a></li>
-                        <li><a class="dribbble" href="#"><i class="fa"><img src="assets/svg/instagram.svg" alt=""></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa"><img src="assets/svg/whatsapp.svg" alt=""></i></a></li>   
+                        <li><a class="facebook" href="#"><i class="fa"><img src="../assets/svg/facebook.svg" alt=""></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa"><img src="../assets/svg/linkedin.svg" alt=""></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa"><img src="../assets/svg/instagram.svg" alt=""></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa"><img src="../assets/svg/whatsapp.svg" alt=""></i></a></li>   
                       </ul>
                     </div>
                   </div>
@@ -329,3 +273,81 @@
         <script src="js/script.js"></script>
     </body>
 </html>
+
+<!-- <div class="card bg-primary text-white rounded-3">
+                                <div class="card-body">
+                                  <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h5 class="mb-0">Detalhes do cartão</h5>
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                                      class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                                  </div>
+              
+                                  <p class="small mb-2"></p>
+                                  <a href="#!" type="submit" class="text-white"><i
+                                      class="fab fa-cc-mastercard fa-2x me-2"></i></a>
+                                  <a href="#!" type="submit" class="text-white"><i
+                                      class="fab fa-cc-visa fa-2x me-2"></i></a>
+                                  <a href="#!" type="submit" class="text-white"><i
+                                      class="fab fa-cc-amex fa-2x me-2"></i></a>
+                                  <a href="#!" type="submit" class="text-white"><i class="fab fa-cc-paypal fa-2x"></i></a>
+              
+                                  <form class="mt-4">
+                                    <div class="form-outline form-white mb-4">
+                                      <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                        placeholder="Nome do titular do Cartão" />
+                                      <label class="form-label" for="typeName">Nome do titular do Cartão</label>
+                                    </div>
+              
+                                    <div class="form-outline form-white mb-4">
+                                      <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                        placeholder="**** **** **** ****" minlength="19" maxlength="19" />
+                                      <label class="form-label" for="typeText">Número do cartão</label>
+                                    </div>
+              
+                                    <div class="row mb-4">
+                                      <div class="col-md-6">
+                                        <div class="form-outline form-white">
+                                          <input type="text" id="typeExp" class="form-control form-control-lg"
+                                            placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                                          <label class="form-label" for="typeExp"> Vencimento</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-outline form-white">
+                                          <input type="password" id="typeText" class="form-control form-control-lg"
+                                            placeholder="***" size="1" minlength="3" maxlength="3" />
+                                          <label class="form-label" for="typeText">CVV</label>
+                                        </div>
+                                      </div>
+                                    </div>
+              
+                                  </form>
+              
+                                  <hr id="hrCard" class="my-4">
+              
+                                  <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Subtotal</p>
+                                    <p class="mb-2">R$4798.00</p>
+                                  </div>
+              
+                                  <div class="d-flex justify-content-between">
+                                    <p class="mb-2">
+                                      Envio</p>
+                                    <p class="mb-2">R$20.00</p>
+                                  </div>
+              
+                                  <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-2">Total(Incl. taxas)</p>
+                                    <p class="mb-2">R$4818.00</p>
+                                  </div>
+              
+                                  <button type="button" class="btn btn-info btn-block btn-lg">
+                                    <div class="d-flex justify-content-between">
+                                      <span>R$4818.00</span>
+                                      <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                                    </div>
+                                  </button>
+                                  <span>R$4818.00</span>
+              
+                                </div>
+                              </div> -->
