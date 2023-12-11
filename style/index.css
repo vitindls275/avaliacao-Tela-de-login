@@ -8,8 +8,9 @@
 }
 
 #pagina{
-    background-color: var(--preto);
+    /* background-color: var(--preto); */
 }
+
 
 header{
     background-color: var(--preto);
@@ -25,43 +26,33 @@ header a{
     filter: brightness(10);
 }
 
-#headerRight{
+#headerRight,#headerRightC{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 #headerRightC{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  
 }
 
 #headerleftC{
 
 }
 
-#headerleftC{
+#headerleft{
 
 }
 
 @media screen and (max-width: 768px){
+  
   #headerRight{
-    width: 25%;
-    height: 460px;
-    box-shadow: 0 0 20px var(--roxoClaro);
-    transition: 0.4s;
+    width: 40%;
+    display: flex;
+    justify-content: end;
   }
 
-  
 
-  #headerRight{
-    width: 25%;
-    height: 460px;
-    color: var(--branco);
-    border-radius: 40px 0  ;
-    box-shadow: 0 0 20px #f1c3ffc0;
-    transition: 0.4s;
+  #headerleft,#headerleftC{
   }
 }
 /* --------FIM HEADER-------- */
@@ -268,6 +259,8 @@ span h4{
   }
 }
 @media(max-width:767px){
+  
+
   .mobile{
       font-size: 10px;
   }
@@ -425,10 +418,6 @@ a{
 
 h5{
   margin-top: 4vh;
-}
-
-hr{
-  margin-top: 1.25rem;
 }
 
 form{
