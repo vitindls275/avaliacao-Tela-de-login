@@ -1,280 +1,285 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>carrinhoDELUX</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="../style/index.css">
-        <link rel="shortcut icon" href="../assets/images/logoIcon.png" type="image/x-icon">
-    </head>
-    <body > 
-        <div id="pagina" class="pages">
-            <header class="p-3" id="headerleftC">
-                <nav class="navbar navbar-expand-lg p-0">
-                    <div class="container-fluid d-flex justify-content-space-between">
-                    <ul class="navbar-nav d-flex flex-direction-row ">
-                        <a class="navbar-brand mx-1 p-1" href="../index.html" id="logo">DELUX</a>
-                        <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link mx-1 p-1" href="#">Serviços</a>
-                        
-                            <a class="nav-link mx-1 p-1" href="#">Sobre nós</a>
-                        </li>
-                    </ul>
-                        <header id="headerRightC">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon" id="menuNav"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav" >
-                                <ul class="navbar-nav">
-                                <li class="nav-item d-flex align-items-center">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-basket-fill" viewBox="0 0 16 16">
-                                    <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z"/>
-                                    </svg></a>
-                                </li>
-                                <li class="nav-item d-flex align-items-center">
-                                    <a class="nav-link" href="../pages/singIn.html"><button type="button" class="buttonS">Entrar</button></a>
-                                </li>
-                                <hr class="m-0 p-0">
-                                <li class="nav-item d-flex align-items-center">
-                                    <a class="nav-link" href="../pages/singUp.html"><button type="button" class="buttonS">cadastrar</button></a>
-                                </li>
-                                </ul>
-                            </div>
-                        </header>
-                    </div>
-                </nav>   
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>carrinho - DELUX</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="../style/index.css">
+      <link rel="shortcut icon" href="../assets/images/logoIcon.png" type="image/x-icon">
+  </head>
+  <body class="bg-black"> 
+    <div id="root">
+      <!-------HEADER------->
+      <header class="p-3 headerleft" >
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="container-fluid d-flex justify-content-space-between">
+            <ul class="navbar-nav d-flex flex-direction-row ">
+              <a class="navbar-brand mx-1 p-1" href="../index.html" id="logo">DELUX</a>
+              <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link mx-1 p-1" href="#">Serviços</a>
+                  <a class="nav-link mx-1 p-1" href="#">Sobre nós</a>
+              </li>
+            </ul>
+            <header class="navbar p-0 d-flex headerRight">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" id="menuNav"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav">
+                  <li class="nav-item d-flex align-items-center">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-basket-fill" viewBox="0 0 16 16">
+                        <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z"/>
+                      </svg>
+                    </a>
+                    <a class="nav-link" href="../pages/singIn.html"><button type="button" class="buttonS">Entrar</button></a>
+                    <hr class="m-0 p-0">
+                    <a class="nav-link" href="../pages/singUp.html"><button type="button" class="buttonS">cadastrar</button></a>
+                  </li>
+                </ul>
+              </div>
             </header>
-            <main>
-              <section class="h-100 h-custom" style="background-color: #eee;">
-                <div class="container py-5 h-100">
-                  <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col">
-                      <div class="card">
-                        <div class="card-body p-4" id="carrinho">
-              
-                          <div class="row">
-              
-                            <div class="col-lg-7">
-                              <h5 class="mb-3"><a href="sevicos.html" class="text-body"><i
-                                    class="fas fa-long-arrow-alt-left me-2 text-decoration-none"></i>Continue Shopping</a></h5>
-                              <hr>
-              
-                              <div class="d-flex justify-content-between align-items-center mb-4">
+          </div>
+        </nav>   
+      </header>
+      <!-------FIM HEADER------->
+
+      <!-------MAIN------->
+      <main>
+        <section class="h-100 h-custom">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col">
+                <div class="card" id="carrinho">
+                  <div class="card-body p-4" >
+                    <div class="row">
+                      <div class="col-lg-7" id="car">
+                        <!-- <a href="sevicos.html" class="text-body"><i
+                              class="fas fa-long-arrow-alt-left me-2 text-decoration-none"></i> -->
+                        <h5 id="continueS" class="mb-3"><a href="sevicos.html">Continue Shopping</a></h5>
+                        <hr>
+        
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                          <div>
+                            <p class="mb-1">Carrinho</p>
+                          </div>
+                          <div id="ordernarP">
+                              <span class="me-1">Ordenar por:</span>
+                            <select style="width: 130px; height: 30px;" class="m-0">
+                              <option value=""></option>
+                              <option value="">Maior Preço</option>
+                              <option value="">Menor Preço</option>
+                            </select>
+                          </div>
+                        </div>
+        
+                        <div class="card mb-3 w-100">
+                          <div class="card-body ">
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-row align-items-center">
                                 <div>
-                                  <p class="mb-1">Carrinho</p>
+                                  <img
+                                    src="../assets/images/template.jpg"
+                                    class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
                                 </div>
-                                <div >
-                                  <!-- <p class="mb-0"><span class="text-muted">Ordenar por:</span> <a href="#!"
-                                      class="text-body">preço <i class="fas fa-angle-down mt-1"></i></a></p> -->
-                                  <select style="width: 130px;" class="m-0">
-                                    <option value=""></option>
-                                    <option value="">Maior Preço</option>
-                                    <option value="">Menor Preço</option>
-                                  </select>
+                                <div class="ms-3">
+                                  <h5>Card title</h5>
+                                  <p class="small mb-0">72hrs</p>
                                 </div>
                               </div>
-              
-                              <div class="card mb-3">
-                                <div class="card-body">
-                                  <div class="d-flex justify-content-between">
-                                    <div class="d-flex flex-row align-items-center">
-                                      <div>
-                                        <img
-                                          src="../assets/images/template.jpg"
-                                          class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                      </div>
-                                      <div class="ms-3">
-                                        <h5>Card title</h5>
-                                        <p class="small mb-0">72hrs</p>
-                                      </div>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                      <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">2</h5>
-                                      </div>
-                                      <div style="width: 80px;">
-                                        <h5 class="mb-0">R$ 500,00</h5>
-                                      </div>
-                                      <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                                    </div>
-                                  </div>
+                              <div class="d-flex flex-row align-items-center">
+                                <div style="width: 50px;" class="d-flex justify-content-end">
+                                  <input type="number" class="qntsP"> 
                                 </div>
+                                <div style="width: 80px;">
+                                  <h5 class="mb-0">R$ 3.111,00</h5>
+                                </div>
+                                <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
                               </div>
-              
-                              <div class="card mb-3">
-                                <div class="card-body">
-                                  <div class="d-flex justify-content-between">
-                                    <div class="d-flex flex-row align-items-center">
-                                      <div>
-                                        <img
-                                          src="../assets/images/template2.jpg"
-                                          class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                      </div>
-                                      <div class="ms-3">
-                                        <h5>Card title</h5>
-                                        <p class="small mb-0">72hrs</p>
-                                      </div>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                      <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">2</h5>
-                                      </div>
-                                      <div style="width: 80px;">
-                                        <h5 class="mb-0">R$ 500,00</h5>
-                                      </div>
-                                      <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-              
-                              <div class="card mb-3">
-                                <div class="card-body">
-                                  <div class="d-flex justify-content-between">
-                                    <div class="d-flex flex-row align-items-center">
-                                      <div>
-                                        <img
-                                          src="../assets/images/template3.jpg"
-                                          class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                      </div>
-                                      <div class="ms-3">
-                                        <h5>Card title</h5>
-                                        <p class="small mb-0">72hrs</p>
-                                      </div>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                      <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">1</h5>
-                                      </div>
-                                      <div style="width: 80px;">
-                                        <h5 class="mb-0">R$ 500,00</h5>
-                                      </div>
-                                      <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-              
-                              
-              
-                            </div>
-                            <div class="col-lg-5">
-                              <div id="summary" class="summary h-100">
-                                <div><h4><b>
-                                  Resumo</b></h4></div>
-                                <hr>
-                                <div class="row">
-                                </div>
-                                <form>
-                                    <p style="font-weight: 600;">Envio</p> 
-                                    <select class="text-muted"><option></option>
-                                    <option class="text-muted">Básico (7 dias úteis): R$ 10,03</option>
-                                    <option class="text-muted">Padrão (14 dias úteis): R$ 10,03</option>
-                                    <option class="text-muted">Premium (21 dias úteis): R$ 17,50</option></select>
-
-                                    <label class="mb-2" for="code" style="font-weight: 600;">Código do cupom</label>
-                                    <input id="code" placeholder="Insira seu código">
-
-                                    
-                                </form>
-                                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col" style="font-weight: 600;">Total no carrinho</th>
-                                        <th scope="col"></th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row"></th>
-                                        <td>Subtotal:</td>
-                                        <td>R$ <span>137,00</span></td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row"></th>
-                                        <td>Cupom:</td>
-                                        <td><span>20off</span></td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row"></th>
-                                        <td>Quantidade:</td>
-                                        <th><span style="font-weight: 400;">3</span></th>
-
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <button class="btn">Confira</button>
-                            </div>
                             </div>
                           </div>
                         </div>
+        
+                        <div class="card mb-3 w-100">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-row align-items-center">
+                                <div>
+                                  <img
+                                    src="../assets/images/template2.jpg"
+                                    class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                </div>
+                                <div class="ms-3">
+                                  <h5>Card title</h5>
+                                  <p class="small mb-0">72hrs</p>
+                                </div>
+                              </div>
+                              <div class="d-flex flex-row align-items-center">
+                                <div style="width: 50px;" class="d-flex justify-content-end">
+                                  <input type="number" class="qntsP"> 
+                                </div>
+                                <div style="width: 80px;">
+                                  <h5 class="mb-0">R$ 3.111,00</h5>
+                                </div>
+                                <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="card mb-3 w-100">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-row align-items-center">
+                                <div>
+                                  <img
+                                    src="../assets/images/template3.jpg"
+                                    class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                </div>
+                                <div class="ms-3">
+                                  <h5>Card title</h5>
+                                  <p class="small mb-0">72hrs</p>
+                                </div>
+                              </div>
+                              <div class="d-flex flex-row align-items-center">
+                                <div style="width: 50px;" class="d-flex justify-content-end">
+                                  <input type="number" class="qntsP"> 
+                                </div>
+                                <div style="width: 80px;">
+                                  <h5 class="mb-0">R$ 3.111,00</h5>
+                                </div>
+                                <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        
+        
+                      </div>
+                      <div class="col-lg-5">
+                        <div id="summary" class="summary h-100">
+                          <div><h4><b>
+                            Resumo</b></h4></div>
+                          <hr>
+                          <div class="row">
+                          </div>
+                          <form>
+                            <p style="font-weight: 600;">Envio</p> 
+                            <select class="text-muted"><option></option>
+                              <option class="text-muted">Básico (7 dias úteis) (4 revisões): R$ 3.111,00</option>
+                              <option class="text-muted">Padrão (14 dias úteis) (4 revisões): R$  6.221,00</option>
+                              <option class="text-muted">Premium (21 dias úteis) (2 revisões): R$ 7.777,00</option>
+                            </select>
+
+                              <label class="mb-2" for="code" style="font-weight: 600;">Código do cupom</label>
+                              <input id="code" placeholder="Insira seu código">
+
+                              
+                          </form>
+                          <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col" style="font-weight: 600;">Total no carrinho</th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>Subtotal:</td>
+                                  <td>R$ <span>9.333,00</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>Cupom:</td>
+                                  <td><span>20off</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>Quantidade:</td>
+                                  <th><span style="font-weight: 400;">3</span></th>
+
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <a href="" class="btn">Confira</a>
+                      </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-            </main>
-            <footer class="site-footer">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                      <h6>Sobre</h6>
-                      <p class="text-justify">DELUX.com <i>CODE WANTS TO BE SIMPLE </i> é uma iniciativa para ajudar futuros programadores com código. Delux se concentra em fornecer o código ou trechos mais eficientes, pois o código deseja ser simples. Ajudaremos os programadores a construir conceitos em diferentes linguagens de programação que incluem C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL e Algorithm.</p>
-                    </div>
-          
-                    <div class="col-xs-6 col-md-3">
-                      <h6>Categorias</h6>
-                      <ul class="footer-links">
-                        <li><a href="#">C</a></li>
-                        <li><a href="#">UI Design</a></li>
-                        <li><a href="#">PHP</a></li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">Templates</a></li>
-                      </ul>
-                    </div>
-          
-                    <div class="col-xs-6 col-md-3">
-                      <h6>Quick Links</h6>
-                      <ul class="footer-links">
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">contribuição</a></li>
-                        <li><a href="#">política de Privacidade</a></li>
-                        <li><a href="#">Contate-nos</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr>
-                </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                      <p class="copyright-text">Copyright &copy; 2023 Todos os direitos reservados pela.
-                      <a href="#">DELUX</a>.
-                      </p>
-                    </div>
-          
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                      <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa"><img src="../assets/svg/facebook.svg" alt=""></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa"><img src="../assets/svg/linkedin.svg" alt=""></i></a></li>
-                        <li><a class="dribbble" href="#"><i class="fa"><img src="../assets/svg/instagram.svg" alt=""></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa"><img src="../assets/svg/whatsapp.svg" alt=""></i></a></li>   
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </footer>
-        
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        <script src="js/jquery-3.7.1.js"></script>
-        <script src="js/script.js"></script>
-    </body>
-</html>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-------FIM MAIN------->
 
+      <!-------FOOTER------->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>Sobre</h6>
+              <p class="text-justify">DELUX.com <i>CODE WANTS TO BE SIMPLE </i> é uma iniciativa para ajudar futuros programadores com código. Delux se concentra em fornecer o código ou trechos mais eficientes, pois o código deseja ser simples. Ajudaremos os programadores a construir conceitos em diferentes linguagens de programação que incluem C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL e Algorithm.</p>
+            </div>
+    
+            <div class="col-xs-6 col-md-3">
+              <h6>Categorias</h6>
+              <ul class="footer-links">
+                <li><a href="#">C</a></li>
+                <li><a href="#">UI Design</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Templates</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">contribuição</a></li>
+                <li><a href="#">política de Privacidade</a></li>
+                <li><a href="#">Contate-nos</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2023 Todos os direitos reservados pela.
+                <a href="#">DELUX</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa"><img src="../assets/svg/facebook.svg" alt=""></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa"><img src="../assets/svg/linkedin.svg" alt=""></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa"><img src="../assets/svg/instagram.svg" alt=""></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa"><img src="../assets/svg/whatsapp.svg" alt=""></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-------FIM FOOTER------->
+
+      <!-------SCRIPTS------->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="js/jquery-3.7.1.js"></script>
+      <script src="js/script.js"></script>
+      <!-------FIM SCRIPTS------->
+    </div>
+  </body>
+</html>
