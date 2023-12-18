@@ -57,7 +57,7 @@
   
   label.radio input:checked + span {
     border-color: #fff;
-    background-color: blue;
+    background-color: #420079;
     color: #fff;
   }
   

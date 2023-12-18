@@ -1,14 +1,10 @@
 /* --------HEADER-------- */
-
 :root{
   --preto: #000000;
   --roxoClaro:#9d4edd;
   --roxo:#420079;
   --branco:#ffffff;
 }
-
-
-
 
 header{
   background-color: var(--preto);
@@ -524,6 +520,7 @@ a:hover{
 /*-------FIM SUMMARY-------*/
 
 /*-------FIM MAIN PAGE SHOPPING CART-------*/
+
 /*-------FOOTER-------*/
 .site-footer
 {
